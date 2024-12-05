@@ -1,0 +1,239 @@
+/* all similar content styling codes */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+.banner1{
+  width: 80%;
+  padding: 40px;
+  padding-bottom: 30px;
+  padding-top: 115px;
+  margin: auto;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.banner1 h1{
+  font-size: 42px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;;
+  color: rgb(44,44,44);
+}
+.banner1 p{
+  color: #333;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+}
+.banner1 .frase{
+  font-weight: 600;
+}
+
+.banner1 .descricao,.descricao1, .descricao2{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.banner1 .descricao2{
+  margin-bottom: 70px;
+}
+
+.banner1 .descricao1 .highlight{
+  color: #1E90FF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner1 .descricao2 .highlight{
+  color: #1E90FF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.typing,.typing-2{
+  font-weight: 300;
+  font-size: 35px;
+}
+.image-data span.text {
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .banner1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 12px;
+    margin: 10px;
+    width: 97%;
+  }
+  .banner1 h1{
+    font-size: 25px;
+  }
+  .banner1 p{
+    font-size: 11.5px;
+  }
+  .banner1 .descricao{
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+
+.charts{
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 70px;
+}
+
+.chart{
+  height: 450px;
+  width: 450px;
+  padding: 2rem;
+  margin-top: 30px ;
+  border: 0px solid #1E90FF;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 2px 2px 5px #1E90FF;
+  transition: all 0.3s ease;
+}
+.chart:hover{
+  transform: translateY(-4px);
+  box-shadow: 5px 5px 10px #1E90FF;
+}
+
+a.button.contact-button2{
+  margin-bottom: 70px;
+}
+
+@media (max-width: 700px) {
+  .container3{
+    flex-direction: column;
+    gap: 45px;
+  }
+  .chart{
+    height: 315px;
+    width: 325px;
+  }
+}
+
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  overflow: hidden;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(6, 30, 56, 0.65),rgba(206, 226, 247, 0.65));
+  z-index: 10;
+}
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.image-data span.text {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+.image-data h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #1E90FF;
+  background: white;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+a.button:hover {
+  color: #fff;
+  background-color: #1E90FF;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: transparent;
+}
+.nav-btn:hover {
+  background: transparent;
+}
+.swiper-button-next {
+  right: 50px;
+}
+.swiper-button-prev {
+  left: 50px;
+}
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: hidden;
+}
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
+}
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+}
